@@ -20,7 +20,7 @@ module.exports = () => {
     // Plug Ins for HTML v v v v
     plugins: [
       new HtmlWebpackPlugin({
-        template: './index.html',
+        template: './index.html',  
         title: 'JATE',
       }),
       // Custom service worker
