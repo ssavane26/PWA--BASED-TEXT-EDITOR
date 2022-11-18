@@ -28,7 +28,7 @@ module.exports = () => {
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
       }),
-      // Creates Manifest.json file
+      // Manifest.json file
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
@@ -51,7 +51,7 @@ module.exports = () => {
     ],
 
     module: {
-      // CSS
+      // CSS loaders
       rules: [
          {
           test: /.css$/i,
