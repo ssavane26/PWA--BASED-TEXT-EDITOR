@@ -17,24 +17,26 @@ module.exports = () => {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
-    // Plug Ins for HTML v v v v
     plugins: [
+      // Webpack plugin that generates our html file and injects our bundles. 
       new HtmlWebpackPlugin({
-        template: './index.html',  
-        title: 'JATE',
+        template: './index.html',
+        title: 'J.A.T.E'
       }),
-      // Custom service worker
+
+      // Injects our custom service worker
       new InjectManifest({
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
       }),
-      // Manifest.json file
+
+      // Creates a manifest.json file.
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'JATE Text Editor',
-        short_name: 'JATE',
-        description: 'PWA text editor application',
+        name: 'Just Another Text Editor',
+        short_name: 'J.A.T.E',
+        description: 'Takes notes with JavaScript syntax highlighting!',
         background_color: '#225ca3',
         theme_color: '#225ca3',
         start_url: './',
@@ -47,19 +49,19 @@ module.exports = () => {
           },
         ],
       }),
-      
+
     ],
 
     module: {
-      // CSS loaders
       rules: [
-         {
-          test: /.css$/i,
+        {
+          test: /\.css$/i,
           use: ['style-loader', 'css-loader'],
-         },
-         {
-          test: /.m?js$/,
+        },
+        {
+          test: /\.m?js$/,
           exclude: /node_modules/,
+          // We use babel-loader in order to use ES6.
           use: {
             loader: 'babel-loader',
             options: {
@@ -67,7 +69,7 @@ module.exports = () => {
               plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
             },
           },
-         },
+        },
       ],
     },
   };
