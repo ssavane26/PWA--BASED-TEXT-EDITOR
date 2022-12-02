@@ -17,13 +17,17 @@ SO THAT I can reliably retrieve them for later use
 ## SCREENSHOTS
 
 ## Jate Home Page
+
 ![](Assets\JATEhome.png)
 
 ## Jate Manifest
+
 ![](Assets\JATEmanifest.png)
 
 ## Jate IndexDB
+
 ![](Assets\JATEindexedDB.png)
 
 ## Jate Launch
+
 ![](Assets\JATElaunch.png)
