@@ -18,16 +18,16 @@ SO THAT I can reliably retrieve them for later use
 
 ## Jate Home Page
 
-![](Assets\JATEhome.png)
+<img src = Assets\JATEhome.png>
 
 ## Jate Manifest
 
-![](Assets\JATEmanifest.png)
+<img src = Assets\JATEmanifest.png>
 
 ## Jate IndexDB
 
-![](Assets\JATEindexedDB.png)
+<img src = Assets\JATEindexedDB.png>
 
 ## Jate Launch
 
-![](Assets\JATElaunch.png)
+<img src = Assets\JATElaunch.png>
